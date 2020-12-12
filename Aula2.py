@@ -3,12 +3,18 @@ print("Seja bem vindo ao jogo de advinhação")
 print("************************************")
 
 numero_secreto = 42
-
-chute = input("Digite o seu numero: ")
+chute = int(input("Digite o seu numero: "))
 
 print("Você digitou: ", chute)
 
-if(numero_secreto == int(chute)):
+certo = chute == numero_secreto
+maior = chute > numero_secreto
+menor = chute < numero_secreto
+
+if(certo):
     print('Você acertou c:')
 else:
-    print('Você errou :c')
+    if(maior):
+        print('Você errou! O seu chute foi maior que o número secreto.')
+    elif(menor):
+        print('Você errou! O seu chute foi menor que o número secreto.')
