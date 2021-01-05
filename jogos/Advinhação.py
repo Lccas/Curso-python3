@@ -1,6 +1,5 @@
 import random 
 
-# eu gosto de guacamole com cheddar #
 
 print("************************************")
 print("Seja bem vindo ao jogo de advinhação")
